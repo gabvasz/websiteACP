@@ -1,0 +1,24 @@
+// Cores ACP
+
+$primaria:   #4C804F;
+$secundaria: #264027;
+$claro:      #F2F7F2;
+$escuro:     #09100A;
+
+// scss-docs-start theme-color-variables
+$primary:       $primaria;
+$secondary:     $secundaria;
+$light:         $claro;
+$dark:          $escuro;
+
+
+// Fontes ACP
+
+@font-face {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype'),
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
