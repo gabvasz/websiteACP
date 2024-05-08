@@ -1,7 +1,7 @@
 // Cores ACP
 
 $primaria:   #4C804F;
-$secundaria: #264027;
+$secundaria: #803881;
 $claro:      #F2F7F2;
 $escuro:     #09100A;
 
@@ -21,4 +21,20 @@ $dark:          $escuro;
   
 }
 
+
+@font-face {
+  font-family: 'Yokai';
+  src: url('/fonts/OTYokai-Regular.woff2') format('woff2'),
+       url('/fonts/OTYokai-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.yokai {
+  font-family: "yokai";
+  font-size: 1.25em;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+$icon-link-icon-transform:    translate3d(0, -3px, 0);
