@@ -13,13 +13,13 @@
 
 @font-face {
   font-family: 'Yokai';
-  src: url("/fonts/OTYokai-Regular.woff2") format("woff2"), url("/fonts/OTYokai-Regular.woff") format("woff");
+  src: url("onts/OTYokai-Regular.woff2") format("woff2"), url("onts/OTYokai-Regular.woff") format("woff"), url("onts/OTYokai-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
-/* line 33, C:/Users/gblva/Local Sites/acfwebsitea01/app/public/wp-content/themes/TemaWP_ACP/css/scss/_variaveis-ACP.scss */
+/* line 34, C:/Users/gblva/Local Sites/acfwebsitea01/app/public/wp-content/themes/TemaWP_ACP/css/scss/_variaveis-ACP.scss */
 .yokai {
-  font-family: "yokai";
+  font-family: "Yokai";
   font-size: 1.25em; }
 
 /* line 1, C:/Users/gblva/Local Sites/acfwebsitea01/app/public/wp-content/themes/TemaWP_ACP/css/scss/_root.scss */

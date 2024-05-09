@@ -11,14 +11,14 @@
   <div class="container">
     <div class="row py-5 d-flex justify-content-center mx-auto">
       <h1 class="display-3 text-primary text-center fw-bold">
-        Nossa missão é transformar vidas por meio do acolhimento e da educação, com princípios cristãos
+        <?php the_field('titulo-hero');?>
       </h1>
       <div class="d-flex justify-content-center">
-        <a href="" class="btn btn-primary mx-auto align-content-center mt-4">
+        <a href="<?php the_field('botao-hero--link');?>" class="btn btn-primary mx-auto align-content-center mt-4" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube m-0" viewBox="0 0 16 16">
             <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
           </svg>
-            Conheça nossos projetos sociais
+            <?php the_field('botao-hero--texto');?>
         </a>
       </div>
     </div>
@@ -30,6 +30,7 @@
 
     <div class="row">
       <div class="col-12">
+
       <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active text-primary-subtle" id="home-tab" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1" aria-selected="true">Lar Hermínia Scheleder</button>
@@ -48,23 +49,30 @@
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
           <div class="row p-md-5 d-flex justify-content-center align-content-center">
-            <div class="col-lg-4 d-flex justify-content-center">
-              <picture class="object-fit-cover ">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cei-7.jpg" alt="" srcset="" class="img-fluid rounded-3">
-              </picture>
-            </div>
-
-            <div class="col-lg-6 ms-lg-3 d-grid align-content-center py-3">
-              <div class="d-flex align-content-center justify-content-center">
-                <picture class="mb-3">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-LarHerminia.svg" alt="" class="img-fluid">
+            
+              <div class="col-lg-4 d-flex justify-content-center">
+                <picture class="object-fit-cover ">
+                  <img src="<?php the_sub_field('image-projeto--2'); ?>" class="img-fluid rounded-3">
                 </picture>
               </div>
 
-              <p class="text-dark mb-0">O Ministério Amor que CoMove (AQC)  tem o objetivo de levar o Evangelho às pessoas em situação de rua em  Curitiba-PR, por meio do resgate e reinserção de dependentes químicos,  pela internação em comunidades terapêuticas, acompanhamento e  assistência nas mínimas necessidades de medicações, alimentos e  vestimentas. </p>
-            </div>
+              <div class="col-lg-6 ms-lg-3 d-grid align-content-center py-3">
+                <div class="d-flex align-content-center justify-content-center">
+                  <picture class="mb-3">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-LarHerminia.svg" alt="" class="img-fluid">
+                  </picture>
+                </div>
+
+                <p class="text-dark mb-0"><?php the_sub_field('texto-projeto--1'); ?></p>
+
+                <a class="icon-link icon-link-hover" href="<?php the_sub_field('link-projeto--1'); ?>">
+                  Veja mais sobre o projeto
+                </a>
+              </div>
+         
           </div>
         </div>
+        
 
         <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
           <div class="row p-md-5 d-flex justify-content-center align-content-center">
@@ -81,7 +89,7 @@
                   </picture>
                 </div>
                 
-                <p class="text-dark mb-0">O Ministério Amor que CoMove (AQC)  tem o objetivo de levar o Evangelho às pessoas em situação de rua em  Curitiba-PR, por meio do resgate e reinserção de dependentes químicos,  pela internação em comunidades terapêuticas, acompanhamento e  assistência nas mínimas necessidades de medicações, alimentos e  vestimentas. </p>
+                <p class="text-dark mb-0"><?php the_field('projeto-texto--2')?></p>
               </div>
           </div>
 
@@ -105,7 +113,7 @@
                     </picture>
                   </div>
                   
-                <p class="text-dark mb-0">O Amor que CoMove (AQC)  tem o objetivo de levar o Evangelho às pessoas em situação de rua em  Curitiba-PR, por meio do resgate e reinserção de dependentes químicos,  pela internação em comunidades terapêuticas, acompanhamento e  assistência nas mínimas necessidades de medicações, alimentos e  vestimentas. </p>
+                <p class="text-dark mb-0"><?php the_field('projeto-texto--3')?></p>
               </div>  
           </div>
 
@@ -129,7 +137,7 @@
                     </picture>
                   </div>
                   
-                <p class="text-dark mb-0">O o objetivo de levar o Evangelho às pessoas em situação de rua em  Curitiba-PR, por meio do resgate e reinserção de dependentes químicos,  pela internação em comunidades terapêuticas, acompanhamento e  assistência nas mínimas necessidades de medicações, alimentos e  vestimentas. </p>
+                <p class="text-dark mb-0"><?php the_field('projeto-texto--4')?></p>
               </div>  
           </div>
 

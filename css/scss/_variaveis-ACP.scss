@@ -24,14 +24,15 @@ $dark:          $escuro;
 
 @font-face {
   font-family: 'Yokai';
-  src: url('/fonts/OTYokai-Regular.woff2') format('woff2'),
-       url('/fonts/OTYokai-Regular.woff') format('woff');
+  src: url('\fonts/OTYokai-Regular.woff2') format('woff2'),
+       url('\fonts/OTYokai-Regular.woff') format('woff'),
+       url('\fonts/OTYokai-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 .yokai {
-  font-family: "yokai";
+  font-family: "Yokai";
   font-size: 1.25em;
 }
 

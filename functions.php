@@ -18,6 +18,7 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 function load_scripts(){
     wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array(), '5.3.2', true );
     wp_enqueue_script( 'bootstrapmin', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array(), '5.3.3', false);
+    wp_enqueue_script( 'lightbox', 'https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js', array(), false, true);
 }
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
