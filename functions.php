@@ -39,3 +39,9 @@ function wp_config(){
 }
 add_action( 'after_setup_theme', 'wp_config', 0);
   
+
+function image_alt_by_url($image_url) {
+  $image_id   = attachment_url_to_postid($image_url);
+  $alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
+  return $alt; 
+  }

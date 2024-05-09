@@ -50,22 +50,22 @@
         <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
           <div class="row p-md-5 d-flex justify-content-center align-content-center">
             
-              <div class="col-lg-4 d-flex justify-content-center">
-                <picture class="object-fit-cover ">
-                  <img src="<?php the_sub_field('image-projeto--2'); ?>" class="img-fluid rounded-3">
+              <div class="col-lg-4 d-flex justify-content-center align-content-center">
+                <picture class="d-flex">
+                  <img src="<?php echo get_field('imagemInicial-projetoSocial', 76); ?>"  class="img-fluid rounded-3 object-fit-cover">
                 </picture>
               </div>
 
               <div class="col-lg-6 ms-lg-3 d-grid align-content-center py-3">
                 <div class="d-flex align-content-center justify-content-center">
                   <picture class="mb-3">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-LarHerminia.svg" alt="" class="img-fluid">
+                    <img src="<?php echo get_field('logo-projetoSocial', 76); ?>" width="230" class="img-fluid">
                   </picture>
                 </div>
 
-                <p class="text-dark mb-0"><?php the_sub_field('texto-projeto--1'); ?></p>
+                <p class="text-dark mb-0"><?php echo get_field('descricaoInicial-projetoSocial', 76); ?></p>
 
-                <a class="icon-link icon-link-hover" href="<?php the_sub_field('link-projeto--1'); ?>">
+                <a class="icon-link icon-link-hover" href="<?php echo get_permalink( '76' ); ?>">
                   Veja mais sobre o projeto
                 </a>
               </div>
@@ -76,21 +76,25 @@
 
         <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
           <div class="row p-md-5 d-flex justify-content-center align-content-center">
-              <div class="col-lg-4 d-flex justify-content-center">
-                <picture class="object-fit-cover ">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cei-7.jpg" alt="" srcset="" class="img-fluid rounded-3">
-                </picture>
-              </div>
-
-              <div class="col-lg-6 ms-lg-3 d-grid align-content-center py-3">
-                <div class="d-flex align-content-center justify-content-center">
-                  <picture class="mb-3">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/CEI-Miriam.svg" alt="" class="img-fluid">
+            <div class="col-lg-4 d-flex justify-content-center align-content-center">
+                  <picture class="d-flex">
+                    <img src="<?php echo get_field('imagemInicial-projetoSocial', 78); ?>"  class="img-fluid rounded-3 object-fit-cover">
                   </picture>
                 </div>
-                
-                <p class="text-dark mb-0"><?php the_field('projeto-texto--2')?></p>
-              </div>
+
+                <div class="col-lg-6 ms-lg-3 d-grid align-content-center py-3">
+                  <div class="d-flex align-content-center justify-content-center">
+                    <picture class="mb-3">
+                      <img src="<?php echo get_field('logo-projetoSocial', 78); ?>" width="230" class="img-fluid">
+                    </picture>
+                  </div>
+
+                  <p class="text-dark mb-0"><?php echo get_field('descricaoInicial-projetoSocial', 78); ?></p>
+
+                  <a class="icon-link icon-link-hover" href="<?php echo get_permalink( '78' ); ?>">
+                    Veja mais sobre o projeto
+                  </a>
+            </div>
           </div>
 
         </div>
@@ -98,23 +102,25 @@
         <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
 
           <div class="row p-md-5 d-flex justify-content-center align-content-center">
-            <div class="col-lg-4 d-flex justify-content-center">
-                <div>
-                  <picture class="object-fit-cover ">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cei-7.jpg" alt="" srcset="" class="img-fluid rounded-3">
+            <div class="col-lg-4 d-flex justify-content-center align-content-center">
+                <picture class="d-flex">
+                  <img src="<?php echo get_field('imagemInicial-projetoSocial', 80); ?>"  class="img-fluid rounded-3 object-fit-cover">
                 </picture>
-              </div>
-            </div>  
+            </div>
 
-              <div class="col-lg-6 ms-lg-3 d-grid align-content-center py-3">
-                  <div class="d-flex align-content-center justify-content-center">
-                    <picture class="mb-3">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/VoDurvina.svg" alt="" class="img-fluid">
-                    </picture>
-                  </div>
-                  
-                <p class="text-dark mb-0"><?php the_field('projeto-texto--3')?></p>
-              </div>  
+            <div class="col-lg-6 ms-lg-3 d-grid align-content-center py-3">
+                <div class="d-flex align-content-center justify-content-center">
+                  <picture class="mb-3">
+                    <img src="<?php echo get_field('logo-projetoSocial', 80); ?>" width="230" height="20" class="img-fluid object-content-fit">
+                  </picture>
+                </div>
+
+                <p class="text-dark mb-0"><?php echo get_field('descricaoInicial-projetoSocial', 80); ?></p>
+
+                <a class="icon-link icon-link-hover" href="<?php echo get_permalink( '80' ); ?>">
+                  Veja mais sobre o projeto
+                </a>
+            </div>
           </div>
 
         </div>
@@ -122,23 +128,25 @@
         <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
 
           <div class="row p-md-5 d-flex justify-content-center align-content-center">
-            <div class="col-lg-4 d-flex justify-content-center">
-                <div>
-                  <picture class="object-fit-cover ">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cei-7.jpg" alt="" srcset="" class="img-fluid rounded-3">
+            <div class="col-lg-4 d-flex justify-content-center align-content-center">
+                <picture class="d-flex">
+                  <img src="<?php echo get_field('imagemInicial-projetoSocial', 82); ?>"  class="img-fluid rounded-3 object-fit-cover">
+                </picture>
+            </div>
+
+            <div class="col-lg-6 ms-lg-3 d-grid align-content-center py-3">
+              <div class="d-flex align-content-center justify-content-center">
+                <picture class="mb-3">
+                  <img src="<?php echo get_field('logo-projetoSocial', 82); ?>" width="230" class="img-fluid">
                 </picture>
               </div>
-            </div>  
 
-              <div class="col-lg-6 ms-lg-3 d-grid align-content-center py-3">
-                  <div class="d-flex justify-content-center align-content-center">
-                    <picture class="mb-3">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-AqC.svg" alt="" class="img-fluid">
-                    </picture>
-                  </div>
-                  
-                <p class="text-dark mb-0"><?php the_field('projeto-texto--4')?></p>
-              </div>  
+              <p class="text-dark mb-0"><?php echo get_field('descricaoInicial-projetoSocial', 82); ?></p>
+
+              <a class="icon-link icon-link-hover" href="<?php echo get_permalink( '82' ); ?>">
+                Veja mais sobre o projeto
+              </a>
+            </div>
           </div>
 
         </div>
@@ -150,7 +158,7 @@
 
   </section>
 
-  <section class="container">
+  <section class="container" id="sobre">
     <h2 class="fw-bold text-primary-subtle text-center">Sobre a Associação Comunitária Presbiteriana</h2>
 
     <div class="row mt-4">
@@ -162,13 +170,12 @@
 
       <div class="col-lg-6 py-3 d-flex align-items-center">
         <p class="text-primary mb-0">
-          A Associação Comunitária  Presbiteriana (ACP) é uma entidade sem fins lucrativos, formada pelos  membros da Igreja Presbiteriana de Curitiba (IPC), que compõem sua  Assembleia Geral. 
-          Criada, originalmente, para manter o  Lar Hermínia Scheleder, hoje também é responsável pelo Centro de  Educação Infantil Miriam, pelo Instituto Social Vó Durvina e pelo  projeto Amor que CoMove. Assim, a ACP coordena os projetos de  transformação social da IPC. A ACP tem como missão desempenhar o papel que Jesus Cristo ensinou de fazer o bem e ajudar quem precisa.
+          <?php the_field('texto-sobre'); ?>
         </p>
       </div>
     </div>
 
-    <div class="row d-flex flex-wrap justify-content-around py-5">
+    <div class="row d-flex flex-wrap justify-content-around pt-md-5">
       <div class="col-lg-4">
         <h4 class="fw-bold h5 text-center">Missão</h4>
         <p class="text-dark text-center px-md-5 px-lg-0 mx-5">Transformar vidas por meio da educação, bons exemplos e princípios cristãos.</p>
@@ -190,55 +197,53 @@
     </div>
 
     <div class="d-flex justify-content-between">
-        <a href="" class="btn btn-primary mx-auto align-content-center">
-          Transparência
-        </a>
-
-        <a href="" class="btn btn-primary mx-auto align-content-center">
-          Estatuto Social
+        <a href="<?php echo get_permalink( '107'); ?>" class="btn btn-primary mx-auto align-content-center">
+          Estatuto Social e Balanço
         </a>
     </div>
 
   </section>
 
   <section id="contribua" class="bg-secondary my-4 rounded-5 container border border-primary border-5 border-start-0 border-bottom-0">
-  <div class="row p-3 p-md-5 align-content-center">
-    <div class="col-lg-6 d-flex align-items-center justify-content-center mb-4 mb-lg-0">
-      <picture class="object-fit-cover">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contribua.webp" alt="" srcset="" class="img-fluid rounded-3">
-      </picture>
-    </div>
+    <div class="row p-3 p-md-5 align-content-center">
+      <div class="col-lg-6 d-flex align-items-center justify-content-center mb-4 mb-lg-0">
+        <picture class="object-fit-cover">
+          <img 
+            src="<?php the_field('imagem-Contribua'); ?>"
+            class="img-fluid rounded-3">
+        </picture>
+      </div>
 
     <div class="col-lg-6 d-grid align-content-center">
       <h2 class="text-uppercase display-4 text-wrap fw-bold text-light lh-1">contribua <br>para nossos projetos sociais</h2>
 
-      <div class="d-flex gap-2 flex-wrap">
-        <a href="" class="btn btn-outline-light">
-          Sou uma Pessoa Física
-        </a>
+        <div class="d-flex gap-2 flex-wrap">
+          <a href="" class="btn btn-outline-light">
+            Sou uma Pessoa Física
+          </a>
 
-        <a href="" class="btn btn-outline-light">
-          Sou uma Pessoa Jurídica
-        </a>
+          <a href="" class="btn btn-outline-light">
+            Sou uma Pessoa Jurídica
+          </a>
 
-        <a href="" class="btn btn-outline-light">
-          Quero ser voluntário
-        </a>
-      </div>
+          <a href="" class="btn btn-outline-light">
+            Quero ser voluntário
+          </a>
+        </div>
     </div>
-  </div>
+    </div>
 
   </section>
 
   <section id="blog">
     <h2 class="fw-bold text-dark text-center">Acompanhe as últimas notícias sobre a Associação</h2>
     
-    <div class="container">
+    <div class="container py-3">
       <div class="row">
         <?php
               $args = array(
                   'post_type' => 'post',
-                  'posts_per_page' => 3,
+                  'posts_per_page' => 1,
               );
 
               $featured = new WP_Query( $args );
@@ -280,50 +285,51 @@
       </div>
 
       <div class="col-md-6 d-flex justify-content-center">
-          <button class="btn btn-primary btn-lg align-items-center fw-bold">
+          <a class="btn btn-primary btn-lg align-items-center fw-bold" href="<?php echo get_field('link-whatsapp') ?>" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                 <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
               </svg>  
               (41) 9 9286-8895
-          </button>
+          </a>
       </div>
     </div>
 
     <div class="row mt-4">
       <div class="col-md-3 d-flex flex-column justify-content-center p-3">
         <picture class="d-flex justify-content-center mb-3">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-LarHerminia.svg" alt="" class="img-fluid">
+          <img src="<?php echo get_field('logo-projetoSocial', 76); ?>" width="200" class="img-fluid">
         </picture>
         <p class="text-center">
-          (41) 3619-9501 <br>(41) 99201-5539
+          <?php echo get_field('telefones-projetoSocial', 76); ?>
         </p>
       </div>
 
       <div class="col-md-3 d-flex flex-column justify-content-center p-3">
         <picture class="d-flex justify-content-center mb-3">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/CEI-Miriam.svg" alt="" class="img-fluid">
-        </picture>
-        <p class="text-center">
-        (41) 3338-4566 <br>(41) 99922-0436
-        </p>
-      </div>
+          <img src="<?php echo get_field('logo-projetoSocial', 78); ?>" width="200" class="img-fluid">
 
-      <div class="col-md-3 d-flex flex-column justify-content-center p-3">
-        <picture class="d-flex justify-content-center mb-3">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/VoDurvina.svg" alt="" class="img-fluid">
         </picture>
         <p class="text-center">
-        (41) 3798-0993 <br>(41) 98458-0084
+          <?php echo get_field('telefones-projetoSocial', 78); ?>
 
         </p>
       </div>
 
       <div class="col-md-3 d-flex flex-column justify-content-center p-3">
         <picture class="d-flex justify-content-center mb-3">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-AqC.svg" alt="" class="img-fluid">
+          <img src="<?php echo get_field('logo-projetoSocial', 80); ?>" width="200" height="50" class="img-fluid">
         </picture>
         <p class="text-center">
-        (41) 3224-0302 <br>(41) 99575-9240
+          <?php echo get_field('telefones-projetoSocial', 80); ?>
+        </p>
+      </div>
+
+      <div class="col-md-3 d-flex flex-column justify-content-center p-3">
+        <picture class="d-flex justify-content-center mb-3">
+          <img src="<?php echo get_field('logo-projetoSocial', 82); ?>" width="200" class="img-fluid">
+        </picture>
+        <p class="text-center">
+          <?php echo get_field('telefones-projetoSocial', 82); ?>
         </p>
       </div>
     </div>

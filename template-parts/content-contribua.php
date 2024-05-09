@@ -4,15 +4,15 @@
     </h2>
 
     <div class="d-flex gap-2 flex-wrap">
-      <a href="" class="btn btn-outline-primary">
+      <a href="<?php echo get_permalink('117');?>" class="btn btn-outline-primary">
         Sou uma Pessoa Física
       </a>
 
-      <a href="" class="btn btn-outline-primary">
+      <a href="<?php echo get_permalink('117');?>" class="btn btn-outline-primary">
         Sou uma Pessoa Jurídica
       </a>
 
-      <a href="" class="btn btn-outline-primary">
+      <a href="<?php echo get_permalink('117');?>" class="btn btn-outline-primary">
         Quero ser voluntário
       </a>
     </div>

@@ -5,7 +5,6 @@
     Description: Tema criado exclusivamente para a ACP, usando Bootstrap 5.5 em Maio de 2024.
     Version: 1.0
   */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -13,7 +12,7 @@
 
 @font-face {
   font-family: 'Yokai';
-  src: url("onts/OTYokai-Regular.woff2") format("woff2"), url("onts/OTYokai-Regular.woff") format("woff"), url("onts/OTYokai-Regular.ttf") format("truetype");
+  src: url("http://acfwebsitea01.local/wp-content/themes/TemaWP_ACP/fonts/OTYokai-Regular.woff2") format("woff2"), url("http://acfwebsitea01.local/wp-content/themes/TemaWP_ACP/fonts/OTYokai-Regular.woff") format("woff"), url(/fonts/OTYokai-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal; }
 

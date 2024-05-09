@@ -374,26 +374,26 @@
               <a class="nav-link link-dark link-opacity-25-hover" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle link-dark link-opacity-25-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle link-dark link-opacity-25-hover" href=/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Projetos
               </a>
               <ul class="dropdown-menu bg-dark-subtle">
-                <li><a class="dropdown-item" href="#">Lar Hermínia Scheleder</a></li>
-                <li><a class="dropdown-item" href="#">CEI Miriam</a></li>
-                <li><a class="dropdown-item" href="#">Instituto Social Vó Durvina</a></li>
-                <li><a class="dropdown-item" href="#">Amor que Comove</a></li>
+                <li><a class="dropdown-item" href="<?php echo get_permalink( '76'); ?>">Lar Hermínia Scheleder</a></li>
+                <li><a class="dropdown-item" href="<?php echo get_permalink( '78'); ?>">CEI Miriam</a></li>
+                <li><a class="dropdown-item" href="<?php echo get_permalink( '80'); ?>">Instituto Social Vó Durvina</a></li>
+                <li><a class="dropdown-item" href="<?php echo get_permalink( '82'); ?>">Amor que Comove</a></li>
 
 
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-dark link-opacity-25-hover" href="#">Quem Somos</a>
+              <a class="nav-link link-dark link-opacity-25-hover" href="#sobre">Quem Somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-dark link-opacity-25-hover" href="#">Transparência</a>
+              <a class="nav-link link-dark link-opacity-25-hover" href="<?php echo get_permalink( '107'); ?>">Transparência</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-dark link-opacity-25-hover" href="#">Blog</a>
+              <a class="nav-link link-dark link-opacity-25-hover" href="/blog">Blog</a>
             </li>
             <li class="nav-item">
               <a class="btn btn-outline-primary rounded-pill" href="#">Contribua</a>

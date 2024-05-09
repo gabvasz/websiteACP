@@ -332,26 +332,25 @@
 
             <li class="d-flex flex-column gap-1">
               <a class="text-primary fw-bold link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Projetos</a>
-              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="">Lar Hermínia Scheleder</a>
-              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="">CEI Miriam</a>
-              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="">Vó Durvina</a>
-              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="">Amor que Comove</a>
+              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="<?php echo get_permalink('76');?>">Lar Hermínia Scheleder</a>
+              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="<?php echo get_permalink('78');?>">CEI Miriam</a>
+              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="<?php echo get_permalink('80');?>">Vó Durvina</a>
+              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="<?php echo get_permalink('82');?>">Amor que Comove</a>
 
             </li>
 
             <li class="d-flex flex-column gap-1">
-              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary fw-bold" href="">Quem Somos</a>
-              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="">Estatuto Social</a>
-              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="">Diretoria</a>
-              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="">Transparência</a>
+              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary fw-bold" href="#sobre">Quem Somos</a>
+              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="<?php echo get_permalink('107');?>">Estatuto Social e Balanço</a>
+              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="<?php echo get_permalink('130');?>">Diretoria</a>
             </li>
 
             <li>
-              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary fw-bold" href="/blog">Blog</a>
+              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary fw-bold" href="<?php echo get_permalink('74');?>">Blog</a>
             </li>
 
             <li>
-              <a class="btn btn-outline-primary rounded-pill d-flex align-content-center h-auto fw-bold" href="">Contribua</a>
+              <a class="btn btn-outline-primary rounded-pill d-flex align-content-center h-auto fw-bold" href="<?php echo get_permalink('117');?>">Contribua</a>
             </li>
 
           </ul>
@@ -365,7 +364,7 @@
       </div>
 
       <div class="col-12 d-flex justify-content-end">
-        <a href="<?php echo get_the_permalink( '3' ) ?>" class="link-opacity-100 fs-6 justify-content-end link-opacity-25-hover yokai text-decoration-none">design e desenvolvimento por zang</svg>
+        <a href="<?php echo get_the_permalink( '3' ) ?>" class="link-opacity-100 fs-5 justify-content-end link-opacity-25-hover yokai text-decoration-none">design e desenvolvimento por zang</svg>
       </a>
 
       </div>
