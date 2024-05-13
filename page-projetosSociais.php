@@ -7,10 +7,9 @@
   
   <main class="container">
     <div class="row">
-      <div class="col-12 d-flex flex-column justify-content-center">
+      <div class="col-12 d-flex flex-column justify-content-center align-items-start">
 
-        <h1 class="fw-bold text-center invisible"><?php the_title(); ?></h1>
-        <img src="<?php the_field('logo-projetoSocial'); ?>" class="img-fluid mx-auto rounded-2 h-100 object-fit-cover justify-content-center mb-3" width="430">
+        <img src="<?php the_field('logo-projetoSocial'); ?>" class="img-fluid mx-auto rounded-2 justify-content-center object-fit-fill mb-3" width="430" height="230">
 
         <h2 class="lead text-dark text-center px-5">
           <?php the_field('descricaoInicial-projetoSocial'); ?>
@@ -35,21 +34,20 @@
 
   <section class="container py-5">
     <div class="row">
-      <div class="col-lg-4 d-grid bg-primary-subtle rounded-4 p-4 gap-3 h-50">
-        <div>
-        <?php if(have_rows('informacao-projetoSocial')): while(have_rows('informacao-projetoSocial')) : the_row(); ?>
-          <h5><?php the_sub_field('enunciado-projetoSocial')?></h5>
-          <h6><?php the_sub_field('resposta-projetoSocial')?></h6>
-        <?php endwhile; else : endif; ?>
 
+    
+      <div class="col-lg-4 d-grid bg-primary-subtle rounded-4 p-4 gap-3 h-50">
+        <div class="d-flex flex-column gap-2">
+          <h5 class="lead fw-bold">Acompanhe nas Redes Sociais</h5>
+          <a href="<?php the_field('RedeSocialfb-projetoSocial');?>" target="_blank">Facebook</a>
+          <a href="<?php the_field('RedeSocialig-projetoSocial');?>" target="_blank">Instagram</a>
         </div>
 
       </div>
 
-      <div class="col-lg-7 p-3 ms-2">
-        <p class="text-dark">
-          <?php the_content(); ?>
-        </p>
+      <div class="col-lg-7 p-3 ms-2 pt-0">
+        <?php the_content(); ?>
+        
       </div>
     </div>
 

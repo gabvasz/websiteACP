@@ -19,6 +19,13 @@ function load_scripts(){
     wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array(), '5.3.2', true );
     wp_enqueue_script( 'bootstrapmin', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array(), '5.3.3', false);
     wp_enqueue_script( 'lightbox', 'https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js', array(), false, true);
+    wp_enqueue_script( 'gsap-js', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', array(), false, true);
+    wp_enqueue_script( 'gsap-ScrollTrigger', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js', 'gsap-js', false, true);
+    wp_enqueue_script( 'gsap-text', 'https://unpkg.com/split-type', array(), false, true);
+
+
+    wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), '1.0', false);
+
 }
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
@@ -35,7 +42,7 @@ function wp_config(){
   add_image_size( 'homepage-thumb', 470, 375, false );
   add_theme_support( 'post-formats', array( 'video', 'image' ));
   add_theme_support( 'title-tag');
-  add_theme_support( 'custom-logo', array( 'height' => 107, 'width' => 107));
+  add_theme_support( 'custom-logo', array());
 }
 add_action( 'after_setup_theme', 'wp_config', 0);
   
@@ -45,3 +52,20 @@ function image_alt_by_url($image_url) {
   $alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
   return $alt; 
   }
+
+  // Permitir upload de SVG
+
+  function add_file_types_to_uploads($file_types){
+    $new_filetypes = array();
+    $new_filetypes['svg'] = 'image/svg+xml';
+    $file_types = array_merge($file_types, $new_filetypes );
+    return $file_types;
+    }
+    add_filter('upload_mimes', 'add_file_types_to_uploads');
+
+  // Add Favicon with WordPress Hook 
+
+add_action( 'wp_head', 'ilc_favicon');
+function ilc_favicon(){
+    echo "<link rel='shortcut icon' href='" . get_stylesheet_directory_uri() . "/favicon.ico' />" . "\n";
+}

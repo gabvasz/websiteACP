@@ -4,15 +4,17 @@
     <meta charset="<?php bloginfo( 'charset' ) ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-    <link rel="icon" type="image/x-icon" href="<?php the_custom_logo(); ?>">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
     <meta name="description" content="<?php bloginfo('description'); ?>">
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
     
     <?php wp_head(); ?>
   </head>
 <body class="bg-light">
-    <div class="bg-primary rounded-bottom-5 sticky-top d-flex justify-content-center align-content-center gap-3 sticky-top" style="height: 1.5em;">
+    <div class="bg-primary rounded-bottom-5 sticky-top d-flex justify-content-center align-content-center gap-3 sticky-top cabecalho" style="height: 1.5em;">
       <a href="<?php the_field('link-facebook') ?>" class="icon-link link-light icon-link-hover" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
@@ -37,8 +39,8 @@
         </svg>
       </a>
     </div>
-  <header class="container-fluid bg-light px-0 rounded-bottom-5">
-    <nav class="navbar navbar-expand-lg container py-5 d-grid d-md-flex justify-content-center ">
+  <header class="container-fluid bg-light px-0 rounded-bottom-5 menu z-1">
+    <nav class="navbar navbar-expand-lg container d-grid d-md-flex justify-content-center ">
       <a 
           class="navbar-brand mb-3"
           href="/">
@@ -392,11 +394,11 @@
             <li class="nav-item">
               <a class="nav-link link-dark link-opacity-25-hover" href="<?php echo get_permalink( '107'); ?>">Transparência</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item me-2">
               <a class="nav-link link-dark link-opacity-25-hover" href="/blog">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-outline-primary rounded-pill" href="#">Contribua</a>
+              <a class="btn btn-primary rounded-pill" href="<?php echo get_permalink( '117'); ?>">Contribua</a>
             </li>
             
           </ul>
