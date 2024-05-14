@@ -11,14 +11,15 @@
 
         <img src="<?php the_field('logo-projetoSocial'); ?>" class="img-fluid mx-auto rounded-2 justify-content-center object-fit-fill mb-3" width="430" height="230">
 
-        <h2 class="lead text-dark text-center px-5">
+        <div class="lead text-dark text-center px-5">
           <?php the_field('descricaoInicial-projetoSocial'); ?>
-        </h2>
-
-        <p class="lead text-dark text-center">
-          Fale conosco:
-          <?php the_field('telefones-projetoSocial'); ?>
-        </p>
+        </div>
+        <div class="d-flex mx-auto">
+          <p class="lead text-dark text-center">
+            Fale conosco:
+            <?php the_field('telefones-projetoSocial'); ?>
+          </p>
+        </div>
 
       </div>
 
@@ -74,13 +75,13 @@
 
   <section id="contribua" class="container pb-5">
 
-  <?php 
+    <?php 
     while ( have_posts() ) : the_post();
 
       get_template_part( 'template-parts/content', 'contribua' ); 
   
     endwhile;
-  ?>
+    ?>
 
   </section>
 

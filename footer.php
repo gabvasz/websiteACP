@@ -323,6 +323,9 @@
             </svg>
           </a>
           <p class="lead text-dark fs-6 text-center text-lg-start mt-3"><?php bloginfo( 'description' ) ?></p>
+          <p class="lead text-dark fs-6 text-center text-lg-start mt-3">
+            <strong>Telefone:</strong> 41 9928 - 68895 <br>
+            <strong>E-mail:</strong> contato@acpcuritiba.org.br</p>
           
         </div>
 
@@ -334,7 +337,7 @@
               <a class="text-primary fw-bold link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Projetos</a>
               <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="<?php echo get_permalink('76');?>">Lar Hermínia Scheleder</a>
               <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="<?php echo get_permalink('78');?>">CEI Miriam</a>
-              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="<?php echo get_permalink('80');?>">Vó Durvina</a>
+              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="<?php echo get_permalink('80');?>">Instituto Social Vó Durvina</a>
               <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="<?php echo get_permalink('82');?>">Amor que Comove</a>
 
             </li>
@@ -364,7 +367,7 @@
       </div>
 
       <div class="col-12 d-flex justify-content-end">
-        <a href="<?php echo get_the_permalink( '3' ) ?>" class="link-opacity-100 fs-5 justify-content-end link-opacity-25-hover yokai text-decoration-none">design e desenvolvimento por zang</svg>
+        <a href="https://zang.digital" target="_blank" class="link-opacity-100 fs-5 justify-content-end link-opacity-25-hover yokai text-decoration-none">design e desenvolvimento por zang</svg>
       </a>
 
       </div>

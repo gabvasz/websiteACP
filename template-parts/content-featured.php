@@ -1,10 +1,9 @@
 <div class="col-md-6 align-content-center">
   <div class="card" >
-    <img src="<?php echo get_the_post_thumbnail_url();?>" class="card-img-top">
+    <img src="<?php echo get_the_post_thumbnail_url();?>" class="card-img-top img-fluid object-fit-cover" style="height: 25vh;">
             
     <div class="card-body">
       <h3 class="card-title"><?php the_title() ?></h3>
-      <p class="fs-6 text-black-50">Publicado em <?php echo get_the_date(); ?> </p>
       <p class="card-text"><?php echo wp_trim_words( get_the_excerpt(), 15 ); ?></p>
       <a href="<?php the_permalink(); ?>" class="btn btn-link">Leia mais</a>
     </div>

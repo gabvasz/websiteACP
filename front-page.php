@@ -26,7 +26,7 @@
   </div>
   </main>
 
-  <section class="container py-4" id="projetos"">
+  <section class="container py-2" id="projetos"">
     <h2 class="fw-bold h2 text-primary-subtle text-center mb-4">Conheça nossos projetos</h2>
 
     <div class="row">
@@ -49,7 +49,7 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-          <div class="row p-md-5 d-flex justify-content-center align-content-center">
+          <div class="row p-md-2 d-flex justify-content-center align-content-center">
             
               <div class="col-lg-4 d-flex justify-content-center align-content-center">
                 <picture class="d-flex">
@@ -76,7 +76,7 @@
         
 
         <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-          <div class="row p-md-5 d-flex justify-content-center align-content-center">
+          <div class="row p-md-2 d-flex justify-content-center align-content-center">
             <div class="col-lg-4 d-flex justify-content-center align-content-center">
                   <picture class="d-flex">
                     <img src="<?php echo get_field('imagemInicial-projetoSocial', 78); ?>"  class="img-fluid rounded-3 object-fit-cover">
@@ -102,7 +102,7 @@
 
         <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
 
-          <div class="row p-md-5 d-flex justify-content-center align-content-center">
+          <div class="row p-md-2 d-flex justify-content-center align-content-center">
             <div class="col-lg-4 d-flex justify-content-center align-content-center">
                 <picture class="d-flex">
                   <img src="<?php echo get_field('imagemInicial-projetoSocial', 80); ?>"  class="img-fluid rounded-3 object-fit-cover">
@@ -128,7 +128,7 @@
 
         <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
 
-          <div class="row p-md-5 d-flex justify-content-center align-content-center">
+          <div class="row p-md-2 d-flex justify-content-center align-content-center">
             <div class="col-lg-4 d-flex justify-content-center align-content-center">
                 <picture class="d-flex">
                   <img src="<?php echo get_field('imagemInicial-projetoSocial', 82); ?>"  class="img-fluid rounded-3 object-fit-cover">
@@ -159,7 +159,7 @@
 
   </section>
 
-  <section class="container" id="sobre">
+  <section class="container py-2" id="sobre">
     <h2 class="fw-bold text-primary-subtle text-center">Sobre a Associação Comunitária Presbiteriana</h2>
 
     <div class="row mt-4">
@@ -169,38 +169,13 @@
         </picture>
       </div>
 
-      <div class="col-lg-6 py-3 d-flex align-items-center">
-        <p class="text-primary mb-0">
+      <div class="col-lg-6 py-3 d-flex flex-column justify-content-start align-items-center text-dark lead">
+        
           <?php the_field('texto-sobre'); ?>
-        </p>
+
+          <a href="<?php echo get_permalink( '107' ); ?>" class="btn btn-outline-primary me-auto">Saiba mais sobre a Associação</a>
+        
       </div>
-    </div>
-
-    <div class="row d-flex flex-wrap justify-content-around pt-md-5">
-      <div class="col-lg-4">
-        <h4 class="fw-bold h5 text-center">Missão</h4>
-        <p class="text-dark text-center px-md-5 px-lg-0 mx-5">Transformar vidas por meio da educação, bons exemplos e princípios cristãos.</p>
-
-      </div>
-
-      <div class="col-lg-4 ">
-        <h4 class="fw-bold h5 text-center">Visão</h4>
-        <p class="text-dark text-center px-md-5 px-lg-0 mx-5">Tornar-se referência nacional na transformação, desenvolvimento e inserção de indivíduos e famílias na sociedade.</p>
-
-      </div>
-
-      <div class="col-lg-4">
-        <h4 class="fw-bold h5 text-center">Valores</h4>
-        <p class="text-dark text-center px-md-5 px-lg-0 mx-5">Deus, Respeito, Ética, Responsabilidade, Persistência.</p>
-
-      </div>
-      
-    </div>
-
-    <div class="d-flex justify-content-between">
-        <a href="<?php echo get_permalink( '107'); ?>" class="btn btn-primary mx-auto align-content-center">
-          Estatuto Social e Balanço
-        </a>
     </div>
 
   </section>

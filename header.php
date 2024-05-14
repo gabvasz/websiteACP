@@ -389,11 +389,9 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-dark link-opacity-25-hover" href="#sobre">Quem Somos</a>
+              <a class="nav-link link-dark link-opacity-25-hover" href="<?php echo get_permalink( '107'); ?>">Quem Somos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link link-dark link-opacity-25-hover" href="<?php echo get_permalink( '107'); ?>">Transparência</a>
-            </li>
+            
             <li class="nav-item me-2">
               <a class="nav-link link-dark link-opacity-25-hover" href="/blog">Blog</a>
             </li>
