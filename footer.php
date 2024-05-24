@@ -324,14 +324,14 @@
           </a>
           <p class="lead text-dark fs-6 text-center text-lg-start mt-3"><?php bloginfo( 'description' ) ?></p>
           <p class="lead text-dark fs-6 text-center text-lg-start mt-3">
-            <strong>Telefone:</strong> 41 9928 - 68895 <br>
+            <strong>Telefone:</strong> (41) 9 99286-8895 <br>
             <strong>E-mail:</strong> contato@acpcuritiba.org.br</p>
           
         </div>
 
         <div class="col-12 d-grid align-content-center mt-4">
 
-          <ul class="list-unstyled d-flex gap-3 flex-wrap justify-content-around align-items-start">
+          <ul class="list-unstyled d-flex gap-3 flex-wrap justify-content-center align-items-start">
 
             <li class="d-flex flex-column gap-1">
               <a class="text-primary fw-bold link-offset-2 link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Projetos</a>
@@ -342,24 +342,15 @@
 
             </li>
 
-            <li class="d-flex flex-column gap-1">
-              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary fw-bold" href="#sobre">Quem Somos</a>
-              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="<?php echo get_permalink('107');?>">Estatuto Social e Balanço</a>
-              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary" href="<?php echo get_permalink('130');?>">Diretoria</a>
-            </li>
-
             <li>
-              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-primary fw-bold" href="<?php echo get_permalink('74');?>">Blog</a>
-            </li>
-
-            <li>
-              <a class="btn btn-outline-primary rounded-pill d-flex align-content-center h-auto fw-bold" href="<?php echo get_permalink('117');?>">Contribua</a>
+              <a class="btn btn-outline-primary rounded-pill d-flex align-content-center h-auto fw-bold" href="<?php echo get_permalink('117');?>">Quero Doar</a>
             </li>
 
           </ul>
         </div>
       </div>
     </div>
+    
     <div class="container ">
       <div class="col-12 d-flex justify-content-end gap-2">
         <a href="<?php echo get_the_permalink( '3' ) ?>" class="link-opacity-75 link-primary justify-content-end link-offset-1">Política de Privacidade</a>

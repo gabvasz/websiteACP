@@ -191,20 +191,13 @@
       </div>
 
     <div class="col-lg-6 d-grid align-content-center">
-      <h2 class="text-uppercase display-4 text-wrap fw-bold text-light lh-1">contribua <br>para nossos projetos sociais</h2>
+      <h2 class="text-uppercase display-4 text-wrap fw-bold text-light lh-1">contribua <br>com nossos projetos sociais</h2>
 
         <div class="d-flex gap-2 flex-wrap">
           <a href="<?php echo get_permalink( '117'); ?>" class="btn btn-outline-light">
-            Sou uma Pessoa Física
+            Quero Doar
           </a>
-
-          <a href="<?php echo get_permalink( '117'); ?>" class="btn btn-outline-light">
-            Sou uma Pessoa Jurídica
-          </a>
-
-          <a href="<?php echo get_permalink( '117'); ?>" class="btn btn-outline-light">
-            Quero ser voluntário
-          </a>
+          
         </div>
     </div>
     </div>

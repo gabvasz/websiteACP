@@ -16,7 +16,6 @@
         </div>
         <div class="d-flex mx-auto">
           <p class="lead text-dark text-center">
-            Fale conosco:
             <?php the_field('telefones-projetoSocial'); ?>
           </p>
         </div>
@@ -35,22 +34,15 @@
 
   <section class="container py-5">
     <div class="row">
-
-    
-      <div class="col-lg-4 d-grid bg-primary-subtle rounded-4 p-4 gap-3 h-50">
-        <div class="d-flex flex-column gap-2">
+      <div class="col-lg-9 p-3 ms-2 pt-0">
+        <?php the_content(); ?>
+      </div>
+    </div>
+    <div class="gap-2 bg-primary-subtle p-3 rounded-4">
           <h5 class="lead fw-bold">Acompanhe nas Redes Sociais</h5>
           <a href="<?php the_field('RedeSocialfb-projetoSocial');?>" target="_blank">Facebook</a>
           <a href="<?php the_field('RedeSocialig-projetoSocial');?>" target="_blank">Instagram</a>
         </div>
-
-      </div>
-
-      <div class="col-lg-7 p-3 ms-2 pt-0">
-        <?php the_content(); ?>
-        
-      </div>
-    </div>
 
   </section>
 
