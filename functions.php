@@ -16,7 +16,7 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 
 // incluir estilo e scripts
 function load_scripts(){
-    wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array(), '5.3.2', true );
+    wp_enqueue_style( 'style', get_stylesheet_directory_uri() );
     wp_enqueue_script( 'bootstrapmin', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array(), '5.3.3', false);
     wp_enqueue_script( 'lightbox', 'https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js', array(), false, true);
     wp_enqueue_script( 'gsap-js', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', array(), false, true);
@@ -29,12 +29,6 @@ function load_scripts(){
 }
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
-// Registrando Menu
-register_nav_menus(
-  array(
-      'my_main_menu' => 'Menu Principal'
-        )
-  );
 
 //Função configuração do Tema
 function wp_config(){
