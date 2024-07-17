@@ -371,6 +371,7 @@
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          
           <ul class="navbar-nav text-light">
             <li class="nav-item">
               <a class="nav-link link-dark link-opacity-25-hover" aria-current="page" href="/">Home</a>

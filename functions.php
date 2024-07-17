@@ -13,6 +13,13 @@ remove_action('admin_print_scripts', 'print_emoji_detection_script');
 remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action('admin_print_styles', 'print_emoji_styles');
 
+// Habilitar Menus
+add_theme_support('menus');
+
+function register_my_menu() {
+  register_nav_menu('menu-principal',__( 'Menu Principal' ) );
+}
+add_action( 'init', 'register_my_menu');
 
 // incluir estilo e scripts
 function load_scripts(){
@@ -34,6 +41,8 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
 function wp_config(){
   add_theme_support( 'post-thumbnails');
   add_image_size( 'homepage-thumb', 470, 375, false );
+  add_image_size( 'post-blog', 470, 230, false ); 
+
   add_theme_support( 'post-formats', array( 'video', 'image' ));
   add_theme_support( 'title-tag');
   add_theme_support( 'custom-logo', array());

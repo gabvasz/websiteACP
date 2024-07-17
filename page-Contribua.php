@@ -52,7 +52,8 @@
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <?php the_field('pessoaVoluntario-Contribua');?>
+            <?php echo do_shortcode('[wpforms id="261" title="false"]'); ?>
+
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-<div class="col-md-6 align-content-center">
+<div class="col-md-6 px-3 align-content-center">
   <div class="card" >
     <img src="<?php echo get_the_post_thumbnail_url();?>" class="card-img-top img-fluid object-fit-cover" style="height: 25vh;">
             
@@ -11,7 +11,7 @@
   </div>
 </div>
 
-<div class="col-md-6">
+<div class="col-md-6 px-3 d-flex flex-column align-self-center">
   <h5 class="text-dark">Últimos artigos</h3>
   
   <?php

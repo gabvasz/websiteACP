@@ -1,13 +1,17 @@
 <div class="container-fluid px-lg-5 py-2 d-grid">
-    <div class="container h-auto">
-      <?php the_post_thumbnail( 'large', array('class' => 'img-fluid h-auto mb-4 w-100 object-fit-cover rounded-3' )) ?>
+    <div class="container h-25">
+      <h1 class="display-1 text-start lh-1 text-primary fw-bold"><?php the_title(); ?></h1>
+      <p class="fs-6 text-secondary">Publicado em <?php echo get_the_date(); ?> </p>
+
+
+      <?php the_post_thumbnail( 'post-blog', array('class' => 'img-fluid h-auto mb-4 w-100 object-fit-cover rounded-3' )) ?>
     </div>
+
+    
 
   <main class="container">
     <div class="row">
-      <p class="fs-6 text-secondary">Publicado em <?php echo get_the_date(); ?> </p>
 
-      <h1 class="display-1 text-start lh-1 text-primary fw-bold"><?php the_title(); ?></h1>
 
 
       <div class="text-light lead">
