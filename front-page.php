@@ -2,20 +2,55 @@
 
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   
-  <main class="container py-4 pb-0">
+  <main class="container-fluid py-4 pb-0">
 
     
-      <div class="row d-flex justify-content-center mx-auto">
-        
-        <div class="col-lg-7 d-flex align-items-center justify-content-center">
-          <h1 class="display-5 text-primary text-center text-lg-start fw-bold">
-            <?php the_field('titulo-hero');?>
-          </h1>
-        </div>
+      <div class="row d-flex justify-content-center mx-auto h-50">
+          
+          <div class="container p-lg-5">
+            <h1 class="display-lg-5 display-6 text-primary text-center fw-bold">
+              <?php the_field('titulo-hero');?>
+            </h1>
+          </div>
 
-        <div class="col-lg-5 d-flex align-items-center justify-content-center">
-          <iframe width="560" height="315" class="rounded-3" src="https://www.youtube.com/embed/gQJKO0jOkkE?si=A_BliuT5lfRbx5s-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="col-lg-12 d-flex align-items-center justify-content-center h-50">
+          <div id="myCarousel" class="container-fluid carousel slide d-flex" style="max-height: 25rem;">
 
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Banner Projeto Social 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Banner Projeto Social 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Banner Projeto Social 3"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Banner Projeto Social 4"></button>
+             
+            </div>
+
+            <div class="carousel-inner object-fit-cover">
+              <div class="carousel-item active">
+                <a href="<?php echo get_permalink( '76' ); ?>"><img src="<?php the_field('imagem1Carrosel'); ?>" class="d-block w-100 h-auto rounded-3 object-fit-cover" height="400" alt="ACP-Foto de Projeto Social"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="<?php echo get_permalink( '78' ); ?>"><img src="<?php the_field('imagem2Carrosel'); ?>" class="d-block w-100 h-auto rounded-3 object-fit-cover" height="400" alt="ACP-Foto de Projeto Social"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="<?php echo get_permalink( '80' ); ?>"><img src="<?php the_field('imagem3Carrosel'); ?>" class="d-block w-100 h-auto rounded-3 object-fit-cover" height="400" alt="ACP-Foto de Projeto Social"></a>
+              </div>
+
+              <div class="carousel-item">
+                <a href="<?php echo get_permalink( '82' ); ?>"><img src="<?php the_field('imagem4Carrosel'); ?>" class="d-block w-100 h-auto rounded-3 object-fit-cover" height="400" alt="ACP-Foto de Projeto Social"></a>
+              </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+            
+          </div>
         </div>
         
       </div>
@@ -108,7 +143,7 @@
             <div class="col-lg-6 ms-lg-3 d-grid align-content-center py-3">
                 <div class="d-flex align-content-center justify-content-center">
                   <picture class="mb-3">
-                    <img src="<?php echo get_field('logo-projetoSocial', 80); ?>" width="230" height="20" class="img-fluid object-content-fit">
+                    <img src="<?php echo get_field('logo-projetoSocial', 80); ?>" class="img-fluid object-content-fit">
                   </picture>
                 </div>
 
@@ -235,12 +270,16 @@
     <h2 class="fw-bold text-dark text-center">Fale conosco</h2>
 
       <div class="row flex-grow-1 justify-content-center">
-        <style> 
-          label {
-            margin-bottom: 0;
-          }
-        </style>
-
+        
+      <style>
+        .wpforms-container .wpforms-field {
+          padding: 2px !important;
+        }
+        .wpforms-field label {
+          margin-bottom: 2px !important;
+        }
+      </style>
+      
         <div class="col-md-6">
           <?php echo do_shortcode('[wpforms id="261" title="false"]'); ?>
         </div>
@@ -292,7 +331,7 @@
 
       <div class="col-md-3 d-flex flex-column justify-content-center p-3">
         <picture class="d-flex justify-content-center mb-3">
-          <img src="<?php echo get_field('logo-projetoSocial', 80); ?>" width="200" height="50" class="img-fluid">
+          <img src="<?php echo get_field('logo-projetoSocial', 80); ?>" width="200" height="100" class="img-fluid object-fit-contain" style="max-height: 100px">
         </picture>
         <p class="text-center">
           <?php echo get_field('telefones-projetoSocial', 80); ?>
@@ -316,4 +355,6 @@
 
   <?php endwhile; else: endif ?>
 
+
+  
 <?php get_footer(); ?>

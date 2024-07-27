@@ -3,13 +3,16 @@
       <h1 class="display-1 text-start lh-1 text-primary fw-bold"><?php the_title(); ?></h1>
       <p class="fs-6 text-secondary">Publicado em <?php echo get_the_date(); ?> </p>
 
-
-      <?php the_post_thumbnail( 'post-blog', array('class' => 'img-fluid h-auto mb-4 w-100 object-fit-cover rounded-3' )) ?>
+      <div class="row">
+        <picture class="" style="height: 50vh;">
+          <?php the_post_thumbnail( 'medium', array('class' => 'img-fluid rounded-2 h-100 w-100 object-fit-cover' )) ?>
+        </picture>
+      </div>
     </div>
 
-    
+  
 
-  <main class="container">
+  <main class="container mt-4">
     <div class="row">
 
 
