@@ -7,14 +7,14 @@
     
       <div class="row d-flex justify-content-center mx-auto h-50">
           
-          <div class="container p-lg-5">
+          <div class="container pb-2">
             <h1 class="display-lg-5 display-6 text-primary text-center fw-bold">
               <?php the_field('titulo-hero');?>
             </h1>
           </div>
 
         <div class="col-lg-12 d-flex align-items-center justify-content-center h-50">
-          <div id="myCarousel" class="container-fluid carousel slide d-flex" style="max-height: 25rem;">
+          <div id="myCarousel" class="container-fluid carousel slide d-flex" style="height: auto; max-height: 35rem;">
 
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Banner Projeto Social 1"></button>
