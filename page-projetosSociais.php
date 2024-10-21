@@ -40,7 +40,10 @@
     </div>
     <div class="row col-6">
       <div class="gap-2 bg-primary-subtle p-3 rounded-4 d-flex align-content-center flex-shrink-1">
-              <h5 class="lead fw-bold text-primary-emphasis">Acompanhe nas Redes Sociais</h5>
+             <div class="d-flex flex-column align-content-center"> 
+              <h5 class="lead fw-bold text-primary-emphasis mb-0">Acompanhe nas Redes Sociais</h5>
+              <p class="text-primary mb-0">Clique nos ícones para acessar.</p>
+              </div>
 
               <a href="<?php the_field('RedeSocialfb-projetoSocial');?>" class="icon-link link-light icon-link-hover p-2" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook text-primary-emphasis" viewBox="0 0 16 16">

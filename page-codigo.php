@@ -25,7 +25,7 @@
     </div>
 
     <div class="row d-flex gap-2 justify-content-center mb-3">
-      
+    
       <div class="card" style="width: 18rem;">
         <img src="<?php the_field('imagem-documento'); ?>" class="card-img-top">
         <div class="card-body">
@@ -41,6 +41,14 @@
           <a href="<?php the_field('link-documento2'); ?>" class="btn btn-primary" target="_blank">Download do documento</a>
         </div>
       </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="<?php the_field('imagem-documento3'); ?>" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title"><?php the_field('titulo-documento3'); ?></h5>
+          <a href="<?php the_field('link-documento3'); ?>" class="btn btn-primary" target="_blank">Download do documento</a>
+        </div>
     </div>
 
   </section>
